@@ -14,8 +14,7 @@ Instructions for setting up a virtual environment and installing dependencies wi
     - [services](/frontend/src/services/README.md)
 
 
-
-## Prerequisites
+## Prerequisites for development and testing
 
 - [Python 3](https://www.python.org/downloads/)
 - [pip](https://pip.pypa.io/)
@@ -48,6 +47,13 @@ This will start the development server and allow you to access your backend API.
 
 For more information on the available scripts and their usage, see the `package.json` file.
 
+## Tests
+
+### Executing tests
+
+1. Navigate to the root directory of the backend.
+2. Run `pytest` in the terminal to execute all tests in the integration and tests directories.
+
 ## Structure
 
 ### API 
@@ -61,6 +67,3 @@ The utils directory contains utility files that provide helper functions for var
 ### Models
 
 The models directory contains the files that define the app's data models. These files typically use a language like UML to describe the structure of your app's data, including the relationships between different types of data. The data models defined in this directory can be used by your app to ensure that data is stored and accessed consistently.
-
-
-## Tests
