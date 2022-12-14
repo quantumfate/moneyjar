@@ -1,0 +1,22 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend for the money jar financing app",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "moneyjar"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quantumfate/moneyjar.git"
+  },
+  "keywords": [
+    "moneyjar"
+  ],
+  "author": "Leon Connor Holm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quantumfate/moneyjar/issues"
+  },
+  "homepage": "https://github.com/quantumfate/moneyjar#readme"
+}
