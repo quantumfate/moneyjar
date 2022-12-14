@@ -5,6 +5,7 @@ Instructions for setting up a virtual environment and installing dependencies wi
 ## Prerequisites
 
 - [Python 3](https://www.python.org/downloads/)
+- [pip](https://pip.pypa.io/)
 
 ## Installation
 
