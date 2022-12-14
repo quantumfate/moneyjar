@@ -21,3 +21,8 @@ def delete_user(user_id):
     db.session.delete(user)
     db.session.commit()
     return user
+
+def edit_user_password(user_id, password):
+    user = db.session.query(User).get(user_id)
+    user.set_password(password)
+    
