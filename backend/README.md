@@ -61,3 +61,6 @@ The utils directory contains utility files that provide helper functions for var
 ### Models
 
 The models directory contains the files that define the app's data models. These files typically use a language like UML to describe the structure of your app's data, including the relationships between different types of data. The data models defined in this directory can be used by your app to ensure that data is stored and accessed consistently.
+
+
+## Tests
