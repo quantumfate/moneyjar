@@ -16,3 +16,11 @@ Application for Money jar financing system.
 ## Documentation and Initilization of base Project
 
 Most of the documentation and boilerplate code has been generated using the [ChatGPT](https://chat.openai.com/chat) Bot from [OpenAI](https://openai.com/). ChatGPT made a great contribution to the base folder structure.
+
+## Contributing
+
+Please have a look at the [contribution section](/.github/CONTRIBUTING.md)
+
+## License
+
+[GPL-3.0 license](/LICENSE)
