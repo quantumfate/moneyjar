@@ -4,14 +4,14 @@ Instructions for setting up a virtual environment and installing dependencies wi
 
 ## TOC
 
-- [Backend](backend/README.md)
-    - [api](backend/api/README.md)
-    - [models](backend/models/README.md)
-    - [utils](backend/utils/Readme.md) 
+- [Backend](/backend/README.md)
+    - [api](/backend/api/README.md)
+    - [models](/backend/models/README.md)
+    - [utils](/backend/utils/Readme.md) 
 - [Frontend](frontend/README.md)
-    - [components](frontend/src/components/README.md)
-    - [pages](frontend/src/pages/README.md)
-    - [services](frontend/src/services/README.md)
+    - [components](/frontend/src/components/README.md)
+    - [pages](/frontend/src/pages/README.md)
+    - [services](/frontend/src/services/README.md)
 
 
 ## Prerequisites
