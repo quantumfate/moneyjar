@@ -1,22 +1,23 @@
 {
   "name": "frontend",
   "version": "1.0.0",
-  "description": "Frontend for the money jar financing app",
-  "main": "index.tsx",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "moneyjar"
+    "start": "tsc && react-native start",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android",
+    "web": "react-native run-web"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/quantumfate/moneyjar.git"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-native": "^0.70.6"
   },
-  "keywords": [
-    "moneyjar"
-  ],
-  "author": "Leon Connor Holm",
-  "license": "GNU",
-  "bugs": {
-    "url": "https://github.com/quantumfate/moneyjar/issues"
-  },
-  "homepage": "https://github.com/quantumfate/moneyjar#readme"
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/react-native": "^0.70.8",
+    "typescript": "^4.9.4"
+  }
 }
