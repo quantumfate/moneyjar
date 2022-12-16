@@ -24,6 +24,7 @@ promise==2.3
 psycopg2==2.9.5
 pycodestyle==2.10.0
 pytest==7.2.0
+python-dotenv==0.21.0
 Rx==1.6.1
 singledispatch==3.7.0
 six==1.16.0

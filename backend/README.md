@@ -25,12 +25,12 @@ Instructions for setting up a virtual environment and installing dependencies wi
 2. Open a terminal and navigate to the root directory of the project.
 3. Run the following command to create a new virtual environment:
 
-`python -m venv venv`
+`python -m venv env`
 
 
 4. Activate your virtual environment by running the following command:
 
-`source venv/bin/activate`
+`source env/bin/activate`
 
 5. Install the necessary dependencies for your project by running the following command:
 

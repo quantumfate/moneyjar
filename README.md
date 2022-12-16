@@ -15,11 +15,11 @@ Application for Money jar financing system.
 
 ## Documentation and Initilization of base Project
 
-Most of the documentation and boilerplate code has been generated using the [ChatGPT](https://chat.openai.com/chat) Bot from [OpenAI](https://openai.com/). ChatGPT made a great contribution to the base folder structure.
+Most of the documentation and boilerplate code has been generated using the [ChatGPT](https://chat.openai.com/chat) Bot from [OpenAI](https://openai.com/). ChatGPT made a great contribution to the base folder structure as well as generating boilerplate code.
 
 ## Run the application in Docker
 
-To use this Dockerfile to build a Docker image, you can run the following command:
+Use the [Dockerfile](/Dockerfile) to build the application's Docker image:
 
 `$ docker build -t my-app .`
 
@@ -27,7 +27,7 @@ This will create a Docker image with the tag my-app. To run the image as a Docke
 
 `$ docker run -p 5000:5000 my-app`
 
-This will start the Docker container and expose the backend on port 5000 of your host machine. You can then access the backend using a GraphQL client, such as Insomnia.
+This will start the Docker container and expose the backend on port 5000 of your host machine. You can then access the backend using a GraphQL client, such as [Insomnia](https://docs.insomnia.rest/).
 
 As for the frontend, you will need to start the React Native development server inside the Docker container. To do this, you can use the following command to open a shell inside the Docker container:
 
