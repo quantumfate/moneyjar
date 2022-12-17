@@ -435,3 +435,46 @@ class DashboardFacade:
         else:
             raise ValueError("Invalid dashboard type")
 In this example, the DashboardFacade class has two instance variables, analytics_dashboard and balance_dashboard, which are used to
+
+
+api
+├── __init__.py
+├── mutations
+│   ├── __init__.py
+│   ├── allocation
+│   │   ├── balance
+│   │   │   ├── __init__.py
+│   │   │   ├── balance_fund_mutation.py
+│   │   │   └── balance_jar_mutation.py
+│   │   ├── __init__.py
+│   │   ├── saving_strategy_mutation.py
+│   │   ├── transaction
+│   │   │   ├── __init__.py
+│   │   │   ├── expense_transaction_mutation.py
+│   │   │   └── income_transaction_mutation.py
+│   │   ├── transaction_schedule_mutation.py
+│   ├── allocation_facade_mutation.py
+│   ├── dashboard
+│   │   ├── __init__.py
+│   │   ├── analytics_dashboard_mutation.py
+│   │   └── balance_dashboard_mutation.py
+│   ├── dashboard_facade_mutation.py
+│   └── user_mutation.py
+├── queries
+│   ├── __init__.py
+│   ├── allocation
+│   │   ├── balance
+│   │   │   ├── __init__.py
+│   │   │   ├── balance_fund_query.py
+│   │   │   └── balance_jar_query.py
+│   │   ├── __init__.py
+│   │   ├── saving_strategy_query.py
+│   │   ├── transaction
+│   │   │   ├── __init__.py
+│   │   │   ├── expense_transaction_query.py
+│   │   │   └── income_transaction_query.py
+│   │   ├── transaction_schedule_query.py
+│   ├── allocation_facade_query.py
+│   ├── dashboard
+│   │   ├── __init__.py
+│   │   ├── analytics

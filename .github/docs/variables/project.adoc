@@ -1,0 +1,6 @@
+ifdef::backend-html[]
+:project_name: MoneyJar
+:project_backend_name: MoneyJar Backend
+:project_frontend_name: MoneyJar Frontend
+:project_current_version: 1.0.0
+endif::backend-html[]

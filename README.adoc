@@ -1,0 +1,13 @@
+:doctype: book
+read::/[source,language,attributes]
+----
+.github/docs/variables/*.adoc[]
+----
+
+= Introduction
+
+
+== Chapter 1
+
+
+Welcome to {project_name}, a powerful application for doing all sorts of things.

@@ -1,0 +1,4 @@
+include::/.github/docs/variables/project.adoc[]
+ifdef::backend-html[]
+:copyright: Copyright (C) 2022 `project_name`
+endif::backend-html[]
