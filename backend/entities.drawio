@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Hlew2SzYprfg2hBASBOW" name="Page-1">
-        <mxGraphModel dx="899" dy="723" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="884" dy="687" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -19,11 +19,11 @@
                 <mxCell id="6" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="135.73999999999998" y="330" width="239" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="pk: user_account_id&lt;br&gt;fk: dashboard_facade_id&lt;br&gt;dashboard&lt;br&gt;user_name&lt;br&gt;forename&lt;br&gt;surname&lt;br&gt;email&lt;br&gt;password" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                <mxCell id="19" value="pk: user_account_id&lt;br&gt;fk: dashboard_facade_id&lt;br&gt;dashboard_facade&lt;br&gt;user_name&lt;br&gt;forename&lt;br&gt;surname&lt;br&gt;email&lt;br&gt;password" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="57.8" y="1029" width="138.2" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="uuid&lt;br&gt;uuid&lt;br&gt;Dashboard&lt;br&gt;string(255)&lt;br&gt;string(255)&lt;br&gt;string(255)&lt;br&gt;string(255)&lt;br&gt;string(255)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="197.8" y="1019" width="70" height="120" as="geometry"/>
+                <mxCell id="20" value="uuid&lt;br&gt;uuid&lt;br&gt;DashboardFacade&lt;br&gt;string(255)&lt;br&gt;string(255)&lt;br&gt;string(255)&lt;br&gt;string(255)&lt;br&gt;string(255)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="197.8" y="1019" width="110" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="22" value="" style="endArrow=none;html=1;rounded=1;exitX=-0.003;exitY=0.193;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.996;entryY=0.284;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="2" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">

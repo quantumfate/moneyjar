@@ -5,5 +5,5 @@ from graphene_sqlalchemy import SQLAlchemyObjectType
 
 class DashboardFacade(SQLAlchemyObjectType):
     class Meta:
-        model = db.DashboardFacade
+        model = db.DashboardFacadeConnection
         interfaces = (ObjectType,)
