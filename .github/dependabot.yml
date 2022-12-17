@@ -4,8 +4,18 @@
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
-updates:
-  - package-ecosystem: "pip, npnm" # See documentation for possible values
-    directory: "/" # Location of package manifests
-    schedule:
+update_configs:
+  - package_manager: "pip"
+    directory: "/backend"
+    update_schedule:
       interval: "weekly"
+    package_rules:
+      - include:
+          path: "requirements.txt"
+  - package_manager: "npm"
+    directory: "/frontend"
+    update_schedule:
+      interval: "weekly"
+    package_rules:
+      - include:
+          path: "package.json"
