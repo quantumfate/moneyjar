@@ -1,7 +1,6 @@
-
-
+read::/.github/docs/variables/project.adoc[]
 = Introduction
-
+:doctype: book
 
 == Chapter 1
 
