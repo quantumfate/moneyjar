@@ -1,4 +1,4 @@
-from .user_connection import db, User
+from connections.user_account_connection import db, User
 
 def query_all_users():
     return db.session.query(User).all()

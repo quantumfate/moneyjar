@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Hlew2SzYprfg2hBASBOW" name="Page-1">
-        <mxGraphModel dx="784" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="899" dy="723" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -19,7 +19,7 @@
                 <mxCell id="6" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="135.73999999999998" y="330" width="239" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="pk: user_id&lt;br&gt;fk: dashboard_facade_id&lt;br&gt;dashboard&lt;br&gt;user_name&lt;br&gt;forename&lt;br&gt;surname&lt;br&gt;email&lt;br&gt;password" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                <mxCell id="19" value="pk: user_account_id&lt;br&gt;fk: dashboard_facade_id&lt;br&gt;dashboard&lt;br&gt;user_name&lt;br&gt;forename&lt;br&gt;surname&lt;br&gt;email&lt;br&gt;password" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="57.8" y="1029" width="138.2" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="20" value="uuid&lt;br&gt;uuid&lt;br&gt;Dashboard&lt;br&gt;string(255)&lt;br&gt;string(255)&lt;br&gt;string(255)&lt;br&gt;string(255)&lt;br&gt;string(255)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
@@ -172,8 +172,8 @@
                 <mxCell id="77" value="IncomeTransaction&lt;br&gt;ExpenseTransaciton&lt;br&gt;BalanceJar&lt;br&gt;BalanceFund&lt;br&gt;TransactionSchedule&lt;br&gt;SavingStrategy" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="593.4" y="832" width="130" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="79" value="&lt;div&gt;&lt;span&gt;User&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-                    <mxGeometry x="142.8" y="973" width="50" height="29" as="geometry"/>
+                <mxCell id="79" value="&lt;div&gt;&lt;span&gt;UserAccount&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="132.8" y="973" width="50" height="29" as="geometry"/>
                 </mxCell>
                 <mxCell id="80" value="is_recurring&lt;br&gt;from_balance&lt;br&gt;to_balance&lt;br&gt;balance&lt;br&gt;date" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="153.73999999999998" y="389" width="112" height="50" as="geometry"/>
