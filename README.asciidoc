@@ -1,8 +1,0 @@
-read::/.github/docs/variables/project.adoc[]
-= Introduction
-:doctype: book
-
-== Chapter 1
-
-
-Welcome to {project_name}, a powerful application for doing all sorts of things.
