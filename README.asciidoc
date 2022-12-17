@@ -1,8 +1,4 @@
-:doctype: book
-read::/[source,language,attributes]
-----
-.github/docs/variables/*.adoc[]
-----
+
 
 = Introduction
 
