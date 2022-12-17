@@ -5,7 +5,7 @@ from graphene import ObjectType, String, Schema
 from graphene_sqlalchemy import SQLAlchemyObjectType
 from api.resolvers import Query
 from api.schema import User
-from utils.db.user import User as UserUtil
+from backend.utils.db.connections.user_connection import User as UserUtil
 
 # Create a Flask app and add a route for the GraphQL endpoint
 app = Flask(__name__)
