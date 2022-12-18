@@ -30,7 +30,7 @@ class Logger:
     Attributes:
     - LogType (Enum): The log types.
     - logger (Logger): The logger instance.
-    - log_file_paths (dict): A dictionary of file paths for different log types.
+    - _log_file_paths (dict): A dictionary of file paths for different log types.
     """
     class LogType(Enum):
         API = log_config.LOG_API_DIR
@@ -39,7 +39,9 @@ class Logger:
         TEST = log_config.LOG_TESTS_DIR
         APP = log_config.LOG_DIRECTORY
 
-    log_file_paths = {
+    _log_file_paths = {
+        # Switch case to select the appropriate log type
+        # Unknown log types will default to the app.log
         LogType.API: os.path.join(
             log_config.LOG_DIRECTORY, LogType.API, log_config.LOG_API_FILE_NAME),
         LogType.DATABASE: os.path.join(
@@ -77,7 +79,7 @@ class Logger:
         - A file handler for the specified log type. If the log type is not found, a default file handler is returned.
         """
         try:
-            return logging.FileHandler(cls.log_file_paths[log_type])
+            return logging.FileHandler(cls._log_file_paths[log_type])
         except KeyError:
             return logging.FileHandler(cls._DEFAULT_PATH)
 
