@@ -49,4 +49,4 @@ Please have a look at the [contribution section](/.github/CONTRIBUTING.md)
 
 ## License
 
-[GPL-3.0 license](/LICENSE)
+[AGPL-3.0 license](/LICENSE)
