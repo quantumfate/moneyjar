@@ -1,4 +1,5 @@
 from connections.user_account_connection import UserAccountConnection, db
+from utils import database_log
 
 
 class UserAccountUtils:
@@ -7,6 +8,7 @@ class UserAccountUtils:
         return db.session.query(UserAccountConnection).all()
 
     def add_new_user(name, email):
+        database_log.log_info("New User added.")
         new_user = UserAccountConnection(name=name, email=email)
         db.session.add(new_user)
         db.session.commit()

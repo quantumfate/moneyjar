@@ -33,6 +33,9 @@ class Logger:
     - _log_file_paths (dict): A dictionary of file paths for different log types.
     """
     class LogType(Enum):
+        """
+        Defines available Log options and provides directory names.
+        """
         API = log_config.LOG_API_DIR
         DATABASE = log_config.LOG_DB_DIR
         MODEL = log_config.LOG_MODELS_DIR

@@ -1,4 +1,4 @@
-from .base import Base
+from .base import Base, database_log
 from .config import Config
-from .utils import *
 from .connections import *
+from .utils import *
