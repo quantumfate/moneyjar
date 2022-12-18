@@ -1,8 +1,12 @@
+import Argon2
 from app import db
-from graphene import Field, UUID, ObjectType, String
+from graphene import Field, ObjectType, String
 from graphene_sqlalchemy import SQLAlchemyObjectType
+from helpers.database.connections.user_account_connection import \
+    UserAccountConnection
+from sqlalchemy.dialects.postgresql import UUID
+
 from .dashboard_facade import DashboardFacade
-from helpers.database.connections.user_account_connection import UserAccountConnection
 
 
 class UserAccount(SQLAlchemyObjectType):
@@ -17,6 +21,3 @@ class UserAccount(SQLAlchemyObjectType):
     forename = Field(String, required=True)
     surname = Field(String, required=True)
     email = Field(String, required=True)
-    password = Field(String, required=True)
-
-    
