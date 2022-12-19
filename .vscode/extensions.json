@@ -1,0 +1,43 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+  // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+  // List of extensions which should be recommended for users of this workspace.
+  "recommendations": [
+    "ms-python.vscode-pylance",
+    "mikestead.dotenv",
+    "msjsdiag.vscode-react-native",
+    "burkeholland.simple-react-snippets",
+    "rodrigovallades.es7-react-js-snippets",
+    "infeng.vscode-react-typescript",
+    "ms-azuretools.vscode-docker",
+    "dbaeumer.vscode-eslint",
+    "streetsidesoftware.code-spell-checker",
+    "timonwong.shellcheck",
+    "redhat.vscode-yaml",
+    "donjayamanne.githistory",
+    "wholroyd.jinja",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "esbenp.prettier-vscode",
+    "davidanson.vscode-markdownlint",
+    "littlefoxteam.vscode-python-test-adapter",
+    "njpwerner.autodocstring",
+    "graphql.vscode-graphql-syntax",
+    "graphql.vscode-graphql",
+    "ms-vscode.makefile-tools",
+    "bar.python-import-helper",
+    "mhutchie.git-graph",
+    "ms-python.isort",
+    "pkief.material-icon-theme",
+    "donjayamanne.python-environment-manager",
+    "kevinrose.vsc-python-indent",
+    "hediet.vscode-drawio",
+    "codezombiech.gitignore",
+    "visualstudioexptteam.vscodeintellicode",
+    "visualstudioexptteam.intellicode-api-usage-examples",
+    "ms-python.python",
+    "hbenl.vscode-test-explorer"
+  ],
+  // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+  "unwantedRecommendations": []
+}

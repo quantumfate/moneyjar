@@ -1,3 +1,8 @@
-from .abstract_balance import *
-from .balance_fund import *
-from .balance_jar import *
+from .abstract_balance import AbstractBalance
+from .balance_fund import BalanceFund
+from .balance_jar import BalanceJar
+
+__all__ = [
+    'BalanceFund',
+    'BalanceJar'
+]

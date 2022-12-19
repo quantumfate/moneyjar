@@ -1,11 +1,16 @@
-from connections.user_account_connection import UserAccountConnection, db
-from utils import database_log
+# from sqlalchemy.orm import query
+from helpers.database.base import database_log
+from helpers.database.connections.user_account_connection import \
+    UserAccountConnection
+
+from backend.app import db, session
 
 
 class UserAccountUtils:
 
-    def query_all_users():
-        return db.session.query(UserAccountConnection).all()
+    @classmethod
+    def query_all_users(self):
+        return session.query(UserAccountConnection).all()
 
     def add_new_user(name, email):
         database_log.log_info("New User added.")

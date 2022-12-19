@@ -1,13 +1,13 @@
-from app import db
-from database.base import Base
+from app import db, session
 from flask_login import UserMixin
 from flask_sqlalchemy import SQLAlchemy
+from helpers.database.base import Base
 from sqlalchemy import Column, ForeignKey, String
 from sqlalchemy.dialects.postgresql import BYTEA, UUID
-from utils.user_account_utils import *
+from sqlalchemy.orm import Session
 
 
-class UserAccountConnection(Base):
+class UserAccountConnection(Base, db.Model):
     __tablename__ = 'user_account'
 
     user_account_id = Column(

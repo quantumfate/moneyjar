@@ -1,0 +1,56 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true,
+    "source.sortMembers": true
+  },
+  "python.formatting.autopep8Path": "backend/venv/bin/autopep8",
+  "python.linting.pylintEnabled": true,
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    "./backend/tests",
+    "-p",
+    "*_test.py"
+  ],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": [
+    "--verbose",
+    "-s",
+    "./backend/tests",
+    "-p",
+    "*_test.py"
+  ],
+
+  "autoDocstring.startOnNewLine": false,
+  "python.testing.pytestPath": "pytest",
+  "python.linting.pylintArgs": ["--ignore=tests/*", "--disable=R,C,W1203"],
+  "auto-close-tag.enableAutoCloseTag": true,
+  "python.formatting.provider": "autopep8",
+  "python.linting.pylintCategorySeverity.convention": "Information",
+  "python.linting.pylintCategorySeverity.error": "Error",
+  "python.linting.enabled": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "eslint.validate": ["javascript", "javascriptreact", "html", "vue"],
+  "eslint.run": "onType",
+  "eslint.options": {
+    "extensions": [".js", ".vue", ".tsx"]
+  },
+  "typescript.tsdk": "frontend/node_modules/typescript/lib",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.words": ["graphene", "sessionmaker", "sqlalchemy"],
+  "makefile.makefilePath": "backend/Makefile",
+  "python.venvPath": "backend/venv",
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "xml",
+    "php",
+    "javascript",
+    "typescript",
+    "python"
+  ],
+  "pythonTestExplorer.testFramework": "pytest"
+}

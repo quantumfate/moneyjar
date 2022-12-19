@@ -1,9 +1,13 @@
 from app import db
+from graphene import ObjectType
+
 from .abstract_balance import AbstractBalance
-from graphene import Field, Int, ObjectType, String
 
 
 class BalanceFund(AbstractBalance):
     class Meta:
         model = db.BalanceFund
         interfaces = (ObjectType,)
+
+    def my_abstract_method(self):
+        pass

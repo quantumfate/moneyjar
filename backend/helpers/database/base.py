@@ -1,7 +1,7 @@
 from contextlib import contextmanager
-from logging.logger import Logger, logging
 
 from app import Config as app_config
+from helpers.logging.logger import Logger, logging
 from sqlalchemy import MetaData, create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker

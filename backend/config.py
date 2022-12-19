@@ -1,7 +1,9 @@
 import os
+
 from dotenv import load_dotenv
 
 load_dotenv()
+
 
 class Config:
     """
@@ -13,7 +15,7 @@ class Config:
     TESTING = False
     CSRF_ENABLED = True
     SECRET_KEY = os.getenv("SECRET_KEY")
-    
+
     # Set the database URI based on the environment
     if ENV == 'production':
         SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URI')

@@ -1,13 +1,12 @@
 from graphene_sqlalchemy import SQLAlchemyObjectType
 
-from backend.models.allocation.transaction.expense_transaction import \
-    ExpenseTransaction
+from backend.models.dashboard.analytics_dashboard import AnalyticsDashboard
 
 
-class ExpenseTransactionSchema(SQLAlchemyObjectType):
+class AnalyticsDashboardSchema(SQLAlchemyObjectType):
 
     # Define the UserAccountType using the SQLAlchemyObjectType
     class Meta:
-        model = ExpenseTransaction
+        model = AnalyticsDashboard
         # Specify which fields of the UserAccount model should be exposed in the GraphQL API
         fields = ('id', 'username', 'email', 'password_hash')

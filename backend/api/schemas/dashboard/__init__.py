@@ -1,2 +1,7 @@
-from .analytics_dashboard_resolvers import *
-from .balance_dashboard_resolvers import *
+from .analytics_dashboard_schema import AnalyticsDashboardSchema
+from .balance_dashboard_schema import BalanceDashboardSchema
+
+__all__ = [
+    'AnalyticsDashboardSchema',
+    'BalanceDashboardSchema'
+]
