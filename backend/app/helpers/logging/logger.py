@@ -1,8 +1,8 @@
 import logging
 import os
-from enum import Enum
 
-from .config import Config as log_config
+from .config import Config
+from .logtype import LogType
 
 
 class Logger:
@@ -32,29 +32,21 @@ class Logger:
     - logger (Logger): The logger instance.
     - _log_file_paths (dict): A dictionary of file paths for different log types.
     """
-    class LogType(Enum):
-        """
-        Defines available Log options and provides directory names.
-        """
-        API = log_config.LOG_API_DIR
-        DATABASE = log_config.LOG_DB_DIR
-        MODEL = log_config.LOG_MODELS_DIR
-        TEST = log_config.LOG_TESTS_DIR
-        APP = log_config.LOG_DIRECTORY
+
 
     _log_file_paths = {
         # Switch case to select the appropriate log type
         # Unknown log types will default to the app.log
         LogType.API: os.path.join(
-            log_config.LOG_DIRECTORY, LogType.API, log_config.LOG_API_FILE_NAME),
+            Config.LOG_DIRECTORY, LogType.API, Config.LOG_API_FILE_NAME),
         LogType.DATABASE: os.path.join(
-            log_config.LOG_DIRECTORY, LogType.DATABASE, log_config.LOG_DB_FILE_NAME),
+            Config.LOG_DIRECTORY, LogType.DATABASE, Config.LOG_DB_FILE_NAME),
         LogType.MODEL: os.path.join(
-            log_config.LOG_DIRECTORY, LogType.MODEL, log_config.LOG_MODELS_FILE_NAME),
+            Config.LOG_DIRECTORY, LogType.MODEL, Config.LOG_MODELS_FILE_NAME),
         LogType.TEST: os.path.join(
-            log_config.LOG_DIRECTORY, LogType.TEST, log_config.LOG_TESTS_FILE_NAME),
+            Config.LOG_DIRECTORY, LogType.TEST, Config.LOG_TESTS_FILE_NAME),
         LogType.APP: os.path.join(
-            log_config.LOG_DIRECTORY, log_config.LOG_FILE_NAME),
+            Config.LOG_DIRECTORY, Config.LOG_FILE_NAME),
     }
 
     def __init__(self, name, logtype=LogType.APP, level=logging.INFO):
@@ -65,7 +57,7 @@ class Logger:
         file_handler = self._get_default_filehandler(logtype)
 
         formatter = logging.Formatter(
-            '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+            '%(levelname)s: %(name)s Log from %(asctime)s - %(levelname)s - %(message)s - Called from line %(lineno)d')
         file_handler.setFormatter(formatter)
 
         self.logger.addHandler(file_handler)
@@ -84,7 +76,7 @@ class Logger:
         try:
             return logging.FileHandler(cls._log_file_paths[log_type])
         except KeyError:
-            return logging.FileHandler(cls._DEFAULT_PATH)
+            return logging.FileHandler(cls._log_file_paths[LogType.APP])
 
     @classmethod
     def from_custom_level(cls, name, level):

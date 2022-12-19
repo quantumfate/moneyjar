@@ -1,5 +1,6 @@
 import app
-from app import Session, app, view_func
+from app import app, view_func
+from app.helpers.database import Session
 
 app.add_url_rule('/graphql', view_func=view_func)
 

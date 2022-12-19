@@ -3,6 +3,7 @@ from .balance_fund import BalanceFund
 from .balance_jar import BalanceJar
 
 __all__ = [
+    'AbstractBalance',
     'BalanceFund',
     'BalanceJar'
 ]

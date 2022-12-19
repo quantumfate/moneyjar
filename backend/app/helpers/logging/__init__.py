@@ -1,1 +1,6 @@
-from .logger import *
+from .logger import Logger, LogType
+
+__all__ = [
+    'Logger',
+    'LogType'
+]

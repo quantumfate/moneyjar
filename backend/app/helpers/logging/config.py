@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-class Config:
+
+class Config():
 
     # Current path
     LOG_DIRECTORY = os.path.dirname(os.path.abspath(__file__))
@@ -18,3 +19,4 @@ class Config:
     LOG_MODELS_FILE_NAME = 'models.log'
     LOG_TESTS_DIR = 'tests'
     LOG_TESTS_FILE_NAME = 'tests.log'
+    

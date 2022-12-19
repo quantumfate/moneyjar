@@ -1,8 +1,6 @@
 # from sqlalchemy.orm import query
 from app import db
-from app.helpers.database.base import database_log
-from app.helpers.database.connections.user_account_connection import \
-    UserAccountConnection
+from app.helpers.database import UserAccountConnection, database_log
 
 
 class UserAccountUtils:

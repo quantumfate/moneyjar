@@ -1,6 +1,6 @@
 from app import db
-from database.base import Base
-from models.dashboard_facade import DashboardFacade
+from app.helpers.database import Base
+from app.models import DashboardFacade
 from sqlalchemy import JSON, Column, ForeignKey, Integer, String
 from sqlalchemy.dialects.postgresql import UUID
 

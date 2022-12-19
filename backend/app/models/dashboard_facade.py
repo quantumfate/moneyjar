@@ -1,4 +1,4 @@
-from app import db
+from app.helpers.database import DashboardFacadeConnection, db
 from graphene import Field, Int, ObjectType, String
 from graphene_sqlalchemy import SQLAlchemyObjectType
 

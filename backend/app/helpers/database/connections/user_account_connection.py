@@ -1,5 +1,5 @@
 from app import db, session
-from app.helpers.database.base import Base
+from app.helpers.database.database import Base
 from flask_login import UserMixin
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Column, ForeignKey, String
