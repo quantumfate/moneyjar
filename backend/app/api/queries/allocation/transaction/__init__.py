@@ -1,7 +1,7 @@
-from .expense_transaction_query import ExpenseTransactionQuery
-from .income_transaction_query import IncomeTransactionQuery
+from ._expense_transaction_query import _ExpenseTransactionQuery
+from ._income_transaction_query import _IncomeTransactionQuery
 
 __all__ = [
-    'ExpenseTransactionQuery',
-    'IncomeTransactionQuery',
+    '_ExpenseTransactionQuery',
+    '_IncomeTransactionQuery',
 ]

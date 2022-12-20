@@ -1,7 +1,7 @@
-from .balance_fund_query import BalanceFundQuery
-from .balance_jar_query import BalanceJarQuery
+from ._balance_fund_query import _BalanceFundQuery
+from ._balance_jar_query import _BalanceJarQuery
 
 __all__ = [
-    'BalanceFundQuery',
-    'BalanceJarQuery',
+    '_BalanceFundQuery',
+    '_BalanceJarQuery',
 ]

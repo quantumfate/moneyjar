@@ -5,6 +5,15 @@ from sqlalchemy.dialects.postgresql import UUID
 
 
 class AnalyticsDashboardConnection(AbstractDashboardConnection, db.Model):
+    """Concrete class for analytics dashboard connections.
+
+    This class represents a connection for analytics dashboards and inherits
+    the structure and abstract method from the AbstractDashboardConnection class.
+
+    Attributes:
+        allocation_facade_id (UUID): A UUID field that is specified as the primary key.
+        __tablename__ (str): The name of the database table for this model.
+    """
     __tablename__ = 'dashboard_facade'
 
     allocation_facade_id = Column(

@@ -1,7 +1,7 @@
-from .analytics_dashboard_query import AnalyticsDashboardQuery
-from .balance_dashboard_query import BalanceDashboardQuery
+from ._analytics_dashboard_query import _AnalyticsDashboardQuery
+from ._balance_dashboard_query import _BalanceDashboardQuery
 
 __all__ = [
-    'AnalyticsDashboardQuery',
-    'BalanceDashboardQuery',
+    '_AnalyticsDashboardQuery',
+    '_BalanceDashboardQuery',
 ]

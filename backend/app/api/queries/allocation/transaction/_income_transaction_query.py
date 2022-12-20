@@ -1,13 +1,13 @@
+
 import graphene
-from app.api.queries import UserAccountQueryResolver
-from app.api.schemas.user_account_schema import UserAccountSchema
-from graphene import List, ObjectType
+from app.api.queries import IncomeTransactionQuery
+from app.api.schemas import IncomeTransactionSchema
+from graphene import ObjectType
 
 
-class UserAccountQuery(ObjectType):
+class _IncomeTransactionQuery(ObjectType):
    # Define a field for fetching a list of all user accounts
-    all_user_accounts = List(lambda: UserAccountSchema)
-    user_account = graphene.Field(UserAccountSchema, resolver=UserAccountQueryResolver)
+    user_account = graphene.Field(IncomeTransactionSchema, resolver=IncomeTransactionQuery)
     # # Define a resolver function for the all_user_accounts field
     # def resolve_all_user_accounts(self, info):
     #     # Use the query attribute of the SQLAlchemy session to fetch all user accounts from the database

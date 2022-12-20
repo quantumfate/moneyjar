@@ -1,4 +1,3 @@
-import graphene
 from app.api.resolvers._allocation_facade_resolver import \
     _AllocationFacadeResolver
 from app.api.resolvers._dashboard_facade_resolver import \
@@ -12,74 +11,75 @@ from app.api.resolvers.allocation import (_BalanceFundResolver,
                                           _TransactionScheduleResolver)
 from app.api.resolvers.dashboard import (_AnalyticsDashboardResolver,
                                          _BalanceDashboardResolver)
-from graphene import ObjectType
 
-from .allocation import *
-from .allocation_facade_query import AllocationFacadeQuery
-from .base import Query
-from .dashboard import *
-from .dashboard_facade_query import DashboardFacadeQuery
-from .user_account_query import UserAccountQuery
+from ._allocation_facade_query import _AllocationFacadeQuery
+from ._dashboard_facade_query import _DashboardFacadeQuery
+from ._user_account_query import _UserAccountQuery
+from .allocation import (_BalanceFundQuery, _BalanceJarQuery,
+                         _ExpenseTransactionQuery, _IncomeTransactionQuery,
+                         _SavingStrategyQuery, _TransactionScheduleQuery)
+from .dashboard import _AnalyticsDashboardQuery, _BalanceDashboardQuery
 
 
-# TODO implement as interface
 # Connect all queries with their respective resolver from this package
-class BalanceFundQueryResolver(BalanceFundQuery, _BalanceFundResolver):
+class BalanceFundQuery(_BalanceFundQuery, _BalanceFundResolver):
     """
-    Combines BalanceFundQuery with its resolver methods BalanceFundResolver
+    Combines _BalanceFundQuery with its resolver methods _BalanceFundResolver
     """
-class BalanceJarQueryResolver(BalanceJarQuery, _BalanceJarResolver):
+class BalanceJarQuery(_BalanceJarQuery, _BalanceJarResolver):
     """
-    Combines BalanceJarQuery with its resolver methods BalanceJarResolver
+    Combines _BalanceJarQuery with its resolver methods _BalanceJarResolver
     """
-class IncomeTransactionQueryResolver(IncomeTransactionQuery, _IncomeTransactionResolver):
+class IncomeTransactionQuery(_IncomeTransactionQuery, _IncomeTransactionResolver):
     """
-    Combines IncomeTransactionQuery with its resolver methods IncomeTransactionResolver
+    Combines _IncomeTransactionQuery with its resolver methods _IncomeTransactionResolver
     """
-class ExpenseTransactionQueryResolver(ExpenseTransactionQuery, _ExpenseTransactionResolver):
+class ExpenseTransactionQuery(_ExpenseTransactionQuery, _ExpenseTransactionResolver):
     """
-    Combines ExpenseTransactionQuery with its resolver methods ExpenseTransactionResolver
+    Combines _ExpenseTransactionQuery with its resolver methods _ExpenseTransactionResolver
     """
-class SavingStrategyQueryResolver(SavingStrategyQuery, _SavingStrategyResolver):
+class SavingStrategyQuery(_SavingStrategyQuery, _SavingStrategyResolver):
     """
-    Combines SavingStrategyQuery with its resolver methods SavingStrategyResolver
+    Combines _SavingStrategyQuery with its resolver methods _SavingStrategyResolver
     """
-class TransactionScheduleQueryResolver(TransactionScheduleQuery, _TransactionScheduleResolver):
+class TransactionScheduleQuery(_TransactionScheduleQuery, _TransactionScheduleResolver):
     """
-    Combines TransactionScheduleQuery with its resolver methods TransactionScheduleResolver
+    Combines _TransactionScheduleQuery with its resolver methods _TransactionScheduleResolver
     """
-class AllocationFacadeQueryResolver(AllocationFacadeQuery, _AllocationFacadeResolver):
+class AllocationFacadeQuery(_AllocationFacadeQuery, _AllocationFacadeResolver):
     """
-    Combines AllocationFacadeQuery with its resolver methods AllocationFacadeResolver
+    Combines _AllocationFacadeQuery with its resolver methods _AllocationFacadeResolver
     """
-class AnalyticsDashboardQueryResolver(AnalyticsDashboardQuery, _AnalyticsDashboardResolver):
+class AnalyticsDashboardQuery(_AnalyticsDashboardQuery, _AnalyticsDashboardResolver):
     """
-    Combines AnalyticsDashboardQuery with its resolver methods AnalyticsDashboardResolver
+    Combines _AnalyticsDashboardQuery with its resolver methods _AnalyticsDashboardResolver
     """
-class BalanceDashboardQueryResolver(BalanceDashboardQuery, _BalanceDashboardResolver):
+class BalanceDashboardQuery(_BalanceDashboardQuery, _BalanceDashboardResolver):
     """
-    Combines BalanceDashboardQuery with its resolver methods BalanceDashboardQuery
+    Combines _BalanceDashboardQuery with its resolver methods _BalanceDashboardQuery
     """
-class DashboardFacadeQueryResolver(DashboardFacadeQuery, _DashboardFacadeResolver):
+class DashboardFacadeQuery(_DashboardFacadeQuery, _DashboardFacadeResolver):
     """
-    Combines DashboardFacadeQuery with its resolver methods DashboardFacadeResolver
+    Combines _DashboardFacadeQuery with its resolver methods _DashboardFacadeResolver
     """
-class UserAccountQueryResolver(UserAccountQuery, _UserAccountResolver):
+class UserAccountQuery(_UserAccountQuery, _UserAccountResolver):
     """
-    Combines UserAccountQuery with its resolver methods UserAccountResolver
+    Combines _UserAccountQuery with its resolver methods _UserAccountResolver
     """
+    
+from .base import Query
 
 __all__ = [
-    'BalanceFundQueryResolver',
-    'BalanceJarQueryResolver',
-    'IncomeTransactionQueryResolver',
-    'ExpenseTransactionQueryResolver',
-    'SavingStrategyQueryResolver',
-    'TransactionScheduleQueryResolver',
-    'AllocationFacadeQueryResolver',
-    'AnalyticsDashboardQueryResolver',
-    'BalanceDashboardQueryResolver',
-    'DashboardFacadeQueryResolver',
-    'UserAccountQueryResolver',
+    'BalanceFundQuery',
+    'BalanceJarQuery',
+    'IncomeTransactionQuery',
+    'ExpenseTransactionQuery',
+    'SavingStrategyQuery',
+    'TransactionScheduleQuery',
+    'AllocationFacadeQuery',
+    'AnalyticsDashboardQuery',
+    'BalanceDashboardQuery',
+    'DashboardFacadeQuery',
+    'UserAccountQuery',
     'Query'
 ]

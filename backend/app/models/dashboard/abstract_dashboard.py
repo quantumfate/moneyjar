@@ -9,6 +9,7 @@ class AbstractDahboard(SQLAlchemyObjectType):
         abstract = True
         model = AbstractDashboardConnection
         
+    
     __abstract__ = True
     def __init__(self):
         super().__init__()

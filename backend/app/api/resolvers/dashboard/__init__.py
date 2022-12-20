@@ -1,5 +1,5 @@
-from ._analytics_dashboard_resolvers import _AnalyticsDashboardResolver
-from ._balance_dashboard_resolvers import _BalanceDashboardResolver
+from ._analytics_dashboard_resolver import _AnalyticsDashboardResolver
+from ._balance_dashboard_resolver import _BalanceDashboardResolver
 
 __all__ = [
     '_AnalyticsDashboardResolver',
