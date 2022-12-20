@@ -19,7 +19,7 @@ Code contributions will only be accepted under the following conditions:
 
 ```python
 
-class AnalyticsDashboardQuery(ObjectType):
+class _AnalyticsDashboardQuery(ObjectType):
     """_summary_
 
     Args:

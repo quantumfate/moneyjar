@@ -1,0 +1,25 @@
+<mxfile host="65bd71144e">
+    <diagram id="p8f1gtcf__xArnRyLAQb" name="Page-1">
+        <mxGraphModel dx="1141" dy="1026" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Persistence Layer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="840" width="360" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Logic Layer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="520" width="360" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Client Layer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="200" width="360" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="GraphQL API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="360" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Utility" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="680" width="360" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

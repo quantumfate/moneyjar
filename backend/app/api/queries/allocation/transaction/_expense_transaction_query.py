@@ -1,11 +1,14 @@
 
 import graphene
+from app.api.interfaces import TransactionInterface
 from app.api.queries import ExpenseTransactionQuery
 from app.api.schemas import ExpenseTransactionSchema
 from graphene import ObjectType
 
 
 class _ExpenseTransactionQuery(ObjectType):
+    class Meta:
+        interfaces = (TransactionInterface,)
    # Define a field for fetching a list of all user accounts
     user_account = graphene.Field(ExpenseTransactionSchema, resolver=ExpenseTransactionQuery)
     # # Define a resolver function for the all_user_accounts field

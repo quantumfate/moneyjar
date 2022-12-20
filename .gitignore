@@ -1,2 +1,3 @@
 .vscode/PythonImportHelper-v2-Completion.json
-**/.$entities.drawio.dtmp
+**/*.drawio.dtmp
+**/*.$entities.drawio.bkp

@@ -1,11 +1,14 @@
 
 import graphene
+from app.api.interfaces import TransactionInterface
 from app.api.queries import IncomeTransactionQuery
 from app.api.schemas import IncomeTransactionSchema
 from graphene import ObjectType
 
 
 class _IncomeTransactionQuery(ObjectType):
+    class Meta:
+        interfaces = (TransactionInterface,)
    # Define a field for fetching a list of all user accounts
     user_account = graphene.Field(IncomeTransactionSchema, resolver=IncomeTransactionQuery)
     # # Define a resolver function for the all_user_accounts field
