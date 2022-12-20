@@ -1,10 +1,9 @@
 # import Argon2
 from app.helpers.database import UserAccountConnection
+from app.models import DashboardFacade
 from graphene import Field, ObjectType, String
 from graphene_sqlalchemy import SQLAlchemyObjectType
 from sqlalchemy.dialects.postgresql import BYTEA, UUID
-
-from .dashboard_facade import DashboardFacade
 
 
 class UserAccount(SQLAlchemyObjectType):
