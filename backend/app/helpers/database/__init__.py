@@ -7,7 +7,7 @@ If you make a class in this moduel extend
 
 from .config import Config
 from .connections import *
-from .database import Base, Session, database_log, db
+from .database import Base, database_log, db, session
 from .utils import *
 
 __all__ = [
@@ -26,6 +26,7 @@ __all__ = [
     'DashboardFacadeConnection',
     'UserAccountConnection',
     'database_log',
+    'AbstractUtils',
     'BalanceFundUtils',
     'BalanceJarUtils',
     'ExpenseTransactionUtils',
@@ -38,5 +39,40 @@ __all__ = [
     'DashboardFacadeUtils',
     'UserAccountUtils',
     'db',
-    'Session'
+    'session'
 ]
+
+from app.helpers import ClassImporter
+
+importer = ClassImporter(__import__('app.helpers.database'))
+connection_classes = importer[[
+    'AbstractBalanceConnection',
+    'AbstractTransactionConnection',
+    'BalanceFundConnection',
+    'BalanceJarConnection',
+    'ExpenseTransactionConnection',
+    'IncomeTransactionConnection',
+    'SavingStrategyConnection',
+    'TransactionScheduleConnection',
+    'AbstractDashboardConnection',
+    'AllocationFacadeConnection',
+    'AnalyticsDashboardConnection',
+    'BalanceDashboardConnection',
+    'DashboardFacadeConnection',
+    'UserAccountConnection'
+    ]]
+
+util_classes = importer[[
+    'AbstractUtils',
+    'BalanceFundUtils',
+    'BalanceJarUtils',
+    'ExpenseTransactionUtils',
+    'IncomeTransactionUtils',
+    'SavingStrategyUtils',
+    'TransactionScheduleUtils',
+    'AllocationFacadeUtils',
+    'AnalyticsDashboardUtils',
+    'BalanceDashboardUtils',
+    'DashboardFacadeUtils',
+    'UserAccountUtils'
+    ]]

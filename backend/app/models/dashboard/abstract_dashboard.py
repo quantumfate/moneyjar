@@ -1,13 +1,13 @@
 import abc
 
-from app.helpers.database import AbstractDashboardConnection, db
+from app.helpers.database import AbstractDashboardConnection
 from graphene_sqlalchemy import SQLAlchemyObjectType
 
 
 class AbstractDahboard(SQLAlchemyObjectType):
     class Meta:
         abstract = True
-        model = db.AbstractDashboardConnection
+        model = AbstractDashboardConnection
         
     __abstract__ = True
     def __init__(self):

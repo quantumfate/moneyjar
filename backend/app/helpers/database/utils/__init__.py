@@ -1,3 +1,4 @@
+from .abstract_utils import AbstractUtils
 from .allocation import (BalanceFundUtils, BalanceJarUtils,
                          ExpenseTransactionUtils, IncomeTransactionUtils,
                          SavingStrategyUtils, TransactionScheduleUtils)
@@ -7,6 +8,7 @@ from .dashboard_facade_utils import DashboardFacadeUtils
 from .user_account_utils import UserAccountUtils
 
 __all__ = [
+    'AbstractUtils',
     'BalanceFundUtils',
     'BalanceJarUtils',
     'ExpenseTransactionUtils',

@@ -14,7 +14,7 @@ db = SQLAlchemy(app)
 database_log.log_info("Database object db was created.")
 
 # create a scoped session to manage database transactions
-Session = scoped_session(sessionmaker(
+session = scoped_session(sessionmaker(
     autocommit=False, autoflush=False, bind=db.engine))
 database_log.log_info("Database object db was created.")
 engine = create_engine(

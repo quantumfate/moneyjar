@@ -1,10 +1,9 @@
-from app import db, session
-from app.helpers.database.database import Base
+from app import db
+from app.helpers.database.database import Base, session
 from flask_login import UserMixin
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Column, ForeignKey, String
 from sqlalchemy.dialects.postgresql import BYTEA, UUID
-from sqlalchemy.orm import Session
 
 
 class UserAccountConnection(Base, db.Model):
