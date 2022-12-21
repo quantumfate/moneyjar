@@ -280,3 +280,49 @@ class AbstractMaterializedView(Table, metaclass=abc.ABCMeta):
         str: The DDL statement to refresh the materialized view.
         """
         return element.__str__(element)
+    
+    @compiles(RefreshMaterializedView, "postgresql")
+    def _compile_refresh_source(
+        self,
+        drop_element: DropMaterializedView,
+        element: RefreshMaterializedView, 
+        compiler: Type[SQLCompiler], 
+        **kw: Any
+    ) -> str:
+        """
+        Generates the DDL statement to update the source data with the modified materialized view.
+
+        Args:
+        drop_element (DropMaterializedView): The DDL statement to drop the materialized view.
+        element (RefreshMaterializedView): The DDL statement to refresh the materialized view.
+        compiler (Type[SQLCompiler]): The compiler used to generate the DDL statement.
+        **kw: Additional keyword arguments.
+
+        Returns:
+        str: The DDL statement to refresh the materialized view.
+        """
+        return element.__str__(element + "WITH DATA")
+
+    
+    @compiles(RefreshMaterializedView, "postgresql")
+    def _compile_refresh_meta(
+        self,
+        drop_element: DropMaterializedView,
+        element: RefreshMaterializedView, 
+        compiler: Type[SQLCompiler], 
+        **kw: Any
+    ) -> str:
+        """
+        Generates the DDL statement to update the the meta data of a materialized view without affecting
+        the data stored in the materialized view or its source.
+
+        Args:
+        drop_element (DropMaterializedView): The DDL statement to drop the materialized view.
+        element (RefreshMaterializedView): The DDL statement to refresh the materialized view.
+        compiler (Type[SQLCompiler]): The compiler used to generate the DDL statement.
+        **kw: Additional keyword arguments.
+
+        Returns:
+        str: The DDL statement to refresh the materialized view.
+        """
+        return element.__str__(element + "WITH NO DATA")
