@@ -24,7 +24,7 @@
     "*_test.py"
   ],
 
-  "autoDocstring.startOnNewLine": false,
+  "autoDocstring.startOnNewLine": true,
   "python.testing.pytestPath": "pytest",
   "python.linting.pylintArgs": ["--ignore=tests/*", "--disable=R,C,W1203"],
   "auto-close-tag.enableAutoCloseTag": true,
@@ -52,5 +52,21 @@
     "typescript",
     "python"
   ],
-  "pythonTestExplorer.testFramework": "pytest"
+  "pythonTestExplorer.testFramework": "pytest",
+  "python.autoComplete.extraPaths": [
+    "/backend/app/api/",
+    "/backend/app/models/",
+    "/backend/app/helpers/"
+  ],
+  "python.analysis.extraPaths": [
+    "/backend/app/api/",
+    "/backend/app/models/",
+    "/backend/app/helpers/"
+  ],
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.autoImportUserSymbols": true,
+  "python.analysis.importFormat": "absolute",
+  "python.analysis.inlayHints.functionReturnTypes": false,
+  "python.languageServer": "Pylance",
+  "autoDocstring.includeName": true
 }

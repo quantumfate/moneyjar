@@ -1,4 +1,4 @@
-# pylint: disable=no-member
+# pylint: disable=no-member,unused-argument
 import graphene
 
 
