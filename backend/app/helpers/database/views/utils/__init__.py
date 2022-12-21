@@ -1,1 +1,1 @@
-from .abstract_view import *
+from .abstract_materialized_view import *

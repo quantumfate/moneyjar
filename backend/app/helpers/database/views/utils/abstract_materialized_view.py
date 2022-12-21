@@ -279,4 +279,4 @@ class AbstractMaterializedView(Table, metaclass=abc.ABCMeta):
         Returns:
         str: The DDL statement to refresh the materialized view.
         """
-        return str(element)
+        return element.__str__(element)
