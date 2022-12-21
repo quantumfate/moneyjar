@@ -4,7 +4,6 @@ Author: Leon Connor Holm leon-holm@outlook.de
 This is the database module that exposes the Base object as a declarative base.
 If you make a class in this moduel extend
 """
-
 from .config import Config
 from .connections import *
 from .database import Base, database_log, db, session

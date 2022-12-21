@@ -1,10 +1,11 @@
 import abc
 
 from app.helpers.database.database import Base
-from app.models import AbstractDahboard
+from app.models import AbstractDashboard
 from graphene import Connection, ConnectionField, Node
-from sqlalchemy import Column
+from sqlalchemy import Column, MetaData, String, Table, create_engine
 from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy.sql import expression
 
 
 class AbstractDashboardConnection(Base, Connection):
@@ -20,7 +21,7 @@ class AbstractDashboardConnection(Base, Connection):
     __abstract__ = True
     abstract_balance_id = Column(UUID(as_uuid=True), nullable=False)
     class Meta:
-        node = AbstractDahboard
+        node = AbstractDashboard
     
     @abc.abstractmethod
     def my_abstract_method(self):

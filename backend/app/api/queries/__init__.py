@@ -21,7 +21,7 @@ from .allocation import (_BalanceFundQuery, _BalanceJarQuery,
 from .dashboard import _AnalyticsDashboardQuery, _BalanceDashboardQuery
 
 
-# Connect all queries with their respective resolver from this package
+# Connect all queries with their respective resolver
 class BalanceFundQuery(_BalanceFundQuery, _BalanceFundResolver):
     """
     Combines _BalanceFundQuery with its resolver methods _BalanceFundResolver
