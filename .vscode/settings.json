@@ -28,7 +28,7 @@
   "python.testing.pytestPath": "pytest",
   "python.linting.pylintArgs": ["--ignore=tests/*", "--disable=R,C,W1203"],
   "auto-close-tag.enableAutoCloseTag": true,
-  "python.formatting.provider": "autopep8",
+  "python.formatting.provider": "none",
   "python.linting.pylintCategorySeverity.convention": "Information",
   "python.linting.pylintCategorySeverity.error": "Error",
   "python.linting.enabled": true,
@@ -68,5 +68,8 @@
   "python.analysis.importFormat": "absolute",
   "python.analysis.inlayHints.functionReturnTypes": false,
   "python.languageServer": "Pylance",
-  "autoDocstring.includeName": true
+  "autoDocstring.includeName": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  }
 }

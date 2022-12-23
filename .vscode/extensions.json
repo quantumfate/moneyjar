@@ -37,7 +37,12 @@
     "visualstudioexptteam.intellicode-api-usage-examples",
     "ms-python.python",
     "hbenl.vscode-test-explorer",
-    "leveluptutorials.react-apollo-snippets"
+    "leveluptutorials.react-apollo-snippets",
+    "cstrap.flask-snippets",
+    "ms-ossdata.vscode-postgresql",
+    "codeyard.flask-snippets",
+    "ms-python.black-formatter",
+    "ms-python.pylint"
   ],
   // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
   "unwantedRecommendations": []
