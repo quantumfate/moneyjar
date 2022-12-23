@@ -18,11 +18,14 @@ class AbstractDashboardConnection(Base, Connection):
         abstract_balance_id (UUID): A UUID field that is not specified as a primary key.
         Meta: A class that specifies the node for this connection.
     """
+
     __abstract__ = True
-    abstract_balance_id = Column(UUID(as_uuid=True), nullable=False)
+
+    abstract_dashboard_id = Column(UUID(as_uuid=True), nullable=False)
+
     class Meta:
         node = AbstractDashboard
-    
+
     @abc.abstractmethod
     def my_abstract_method(self):
         pass

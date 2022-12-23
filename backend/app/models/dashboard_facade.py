@@ -1,7 +1,7 @@
 from typing import List, Tuple
 
 from app.helpers.database import DashboardFacadeConnection, db
-from app.models import AllocationFacade, AnalyticsDashboard, BalanceDashboard
+from app.models import AnalyticsDashboard, BalanceDashboard
 from graphene import Field, ObjectType
 from graphene_sqlalchemy import SQLAlchemyObjectType
 from sqlalchemy.dialects.postgresql import UUID
@@ -26,8 +26,6 @@ class DashboardFacade(SQLAlchemyObjectType):
         model = DashboardFacadeConnection
         interfaces = (ObjectType,)
     
-    allocation_facade_id = Field(UUID, required=True)
-    analytics_dashboard_id = Field(UUID, required=True)
-    dashbord_dashboard_id = Field(UUID, required=True)
-    allocation_facade = Field(lambda: AllocationFacade)
+
+    dashbord_facade_id = Field(UUID, required=True)
     dashboards: List[Tuple[AnalyticsDashboard, BalanceDashboard]] = db.relationship("AbstractDashboard", backref="facade", lazy=True)

@@ -1,10 +1,11 @@
 # from sqlalchemy.orm import query
 from app import db
 from app.helpers import AbstractUtils
-from app.helpers.database import AnalyticsDashboardConnection, database_log
+from app.helpers.database import (AbstractDashboardUtils,
+                                  AnalyticsDashboardConnection, database_log)
 
 
-class AnalyticsDashboardUtils(AbstractUtils):
+class AnalyticsDashboardUtils(AbstractDashboardUtils):
     
     def filter_data(self, data: list, filter_func: callable) -> list:
         pass

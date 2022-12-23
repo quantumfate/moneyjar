@@ -16,7 +16,7 @@ class BalanceDashboardConnection(AbstractDashboardConnection, db.Model):
     """
     __tablename__ = 'dashboard_facade'
 
-    balance_facade_id = Column(
+    balance_dashboard_id = Column(
         UUID(as_uuid=True), primary_key=True, nullable=False)
     def my_abstract_method(self):
         pass

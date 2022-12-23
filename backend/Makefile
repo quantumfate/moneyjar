@@ -1,6 +1,8 @@
 freeze:
-	pip freeze | grep -v "pkg-resources" > requirements.txt
+	pip freeze --exclude-editable | grep -v "pkg-resources" > requirements.txt
 install:
 	pip install -r requirements.txt
-venv:
+source:
 	source venv/bin/activate
+venv:
+	python -m venv venv
