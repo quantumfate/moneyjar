@@ -1,13 +1,12 @@
 import app
 from app import app, view_func
-from app.helpers.database import Session
+from app.helpers.database import session
 
 app.add_url_rule('/graphql', view_func=view_func)
 
 
 def session_scope():
     """Provide a transactional scope around a series of database operations."""
-    session = Session()
     try:
         yield session
         session.commit()
